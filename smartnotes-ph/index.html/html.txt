@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTNOTES PH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <header>
+        <h1>SMARTNOTES PH</h1>
+        <p>Cute • Smart • Student-Friendly Study Notebooks</p>
+        <div class="hero-buttons">
+            <button onclick="scrollToShop()">Shop Now</button>
+            <button onclick="scrollToBuild()">Build Your Notebook</button>
+        </div>
+    </header>
+
+    <!-- SHOP SECTION -->
+    <section id="shop">
+        <h2>Build Your Notebook</h2>
+        <div class="selector">
+            <select id="gradeSelect" onchange="updateSubjects()">
+                <option value="">Select Grade</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+            </select>
+
+            <select id="subjectSelect">
+                <option value="">Select Subject</option>
+            </select>
+
+            <select id="quarterSelect">
+                <option value="">Select Quarter</option>
+                <option value="1">1st Quarter</option>
+                <option value="2">2nd Quarter</option>
+                <option value="3">3rd Quarter</option>
+                <option value="4">4th Quarter</option>
+            </select>
+        </div>
+
+        <div id="notebookPreview">
+            <h3>Notebook Preview</h3>
+            <img id="previewImage" src="images/lego.png" alt="Cat Preview">
+        </div>
+
+        <div class="pricing">
+            <p>Single Notebook: ₱120</p>
+            <p>Bundle 2: ₱230 | Bundle 3: ₱340 | Bundle 4: ₱440</p>
+        </div>
+
+        <div class="payment-buttons">
+            <button onclick="pay('gcash')">Pay via GCash</button>
+            <button onclick="pay('paymaya')">Pay via PayMaya</button>
+            <button onclick="pay('bpi')">Pay via BPI</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 SMARTNOTES PH – All notebooks are original. Not affiliated with DepEd.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

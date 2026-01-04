@@ -1,0 +1,23 @@
+#cat-mascots {
+  text-align: center;
+  padding: 40px;
+  background-color: #fdf6f0;
+}
+
+#cat-mascots h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.mascot {
+  display: inline-block;
+  margin: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.mascot img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

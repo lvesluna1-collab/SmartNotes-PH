@@ -1,0 +1,38 @@
+<section id="cat-mascots">
+  <h2>Cat Mascot Personalities 🐱</h2>
+
+  <div class="mascot">
+    <img src="images/lego.png" alt="Lego the angel Persian cat">
+    <h3>Lego 🧡</h3>
+    <p>Personality: Calm, encouraging</p>
+    <p>Message: “Take your time. Learning is not a race.”</p>
+  </div>
+
+  <div class="mascot">
+    <img src="images/whitey.png" alt="Whitey the angel Persian cat">
+    <h3>Whitey 🌙</h3>
+    <p>Personality: Quiet, focused</p>
+    <p>Message: “Late study? I’m here with you.”</p>
+  </div>
+
+  <div class="mascot">
+    <img src="images/panda.png" alt="Panda the angel Siamese cat">
+    <h3>Panda 🌈</h3>
+    <p>Personality: Cheerful, motivating</p>
+    <p>Message: “You’re doing great! Keep going!”</p>
+  </div>
+
+  <div class="mascot">
+    <img src="images/oliver.png" alt="Oliver the angel British Shorthair cat">
+    <h3>Oliver 🪐</h3>
+    <p>Personality: Smart, dreamy</p>
+    <p>Message: “Curious minds learn more.”</p>
+  </div>
+
+  <div class="mascot">
+    <img src="images/bella.png" alt="Bella the angel Persian cat">
+    <h3>Bella 💛</h3>
+    <p>Personality: Calm, elegant</p>
+    <p>Message: “Learning is always beautiful.”</p>
+  </div>
+</section>
