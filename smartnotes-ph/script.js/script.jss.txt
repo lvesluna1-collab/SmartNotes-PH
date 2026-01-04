@@ -1,0 +1,42 @@
+const subjects = {
+    1: ["Makabansa", "Language", "Reading & Literacy", "Mathematics", "GMRC", "PE & Health"],
+    2: ["Makabansa", "Language", "Reading & Literacy", "Mathematics", "GMRC", "PE & Health"],
+    3: ["Makabansa", "Language", "Reading & Literacy", "Mathematics", "GMRC", "PE & Health"],
+    4: ["Filipino", "English", "Science", "Mathematics", "Araling Panlipunan", "EPP", "Music & Arts", "PE & Health", "GMRC"],
+    5: ["Filipino", "English", "Science", "Mathematics", "Araling Panlipunan", "EPP", "Music & Arts", "PE & Health", "GMRC"],
+    6: ["Filipino", "English", "Science", "Mathematics", "Araling Panlipunan", "EPP", "Music & Arts", "PE & Health", "GMRC"],
+    7: ["English", "Filipino", "Science", "Mathematics", "Araling Panlipunan", "Values Education", "MAPEH", "TLE", "Exploratory"],
+    8: ["English", "Filipino", "Science", "Mathematics", "Araling Panlipunan", "Values Education", "MAPEH", "TLE", "Exploratory"],
+    9: ["English", "Filipino", "Science", "Mathematics", "Araling Panlipunan", "Values Education", "MAPEH", "TLE", "Dress Making", "ICT", "Cookery", "Engineering"],
+    10: ["English", "Filipino", "Science", "Mathematics", "Araling Panlipunan", "Values Education", "MAPEH", "TLE", "STEM", "ABM", "HUMSS"],
+    11: ["Core Subjects", "STEM", "ABM", "HUMSS"],
+    12: ["Core Subjects", "STEM", "ABM", "HUMSS"]
+};
+
+function updateSubjects() {
+    const grade = document.getElementById('gradeSelect').value;
+    const subjectSelect = document.getElementById('subjectSelect');
+    subjectSelect.innerHTML = '<option value="">Select Subject</option>';
+
+    if (subjects[grade]) {
+        subjects[grade].forEach(sub => {
+            const option = document.createElement('option');
+            option.value = sub;
+            option.text = sub;
+            subjectSelect.appendChild(option);
+        });
+    }
+}
+
+function pay(method) {
+    alert(`You chose to pay via ${method.toUpperCase()}. Please take a screenshot of your payment and send it privately to the seller.`);
+}
+
+// Optional scrolling functions
+function scrollToShop() {
+    document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToBuild() {
+    document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
+}
